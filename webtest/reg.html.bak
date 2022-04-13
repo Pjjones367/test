@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+<center>
+<img  src="logowave.png" style="width:150px;height:200px;">
+<img  src="logowavenew.png" style="width:150px;height:200px;">
+<br><br>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register</title>
+</head>
+<body bgcolor="black" text="white"  link="white">
+<hr width="27%" color="white" />
+<h2>Register Here</h2><br>
+<form class=reg action="reg.php" method="post">
+
+<table>
+<tr>
+<td>Username:</td>
+<td><input type="text" name="user" placeholder="Enter name Here"></td>
+</tr>
+<td>Password:</td>
+<td><input type="password" name="user_pass" placeholder="Enter Password Here"></td>
+</tr>
+<tr>
+<td>Email:</td>
+<td><input type="email" name="mail" placeholder="Enter Email Here"></td>
+</tr>
+<tr>
+<td><input type="submit" name="submit" value="submit"></td>
+<td><p>Already a user? <a href="login.html">Login Here</a></p></td>
+<a href="test.html">Skip</a>
+</tr>
+</table>
+</form>
+ 
+</center>
+</body>
+</html>
+
+ <style>
+.reg{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 50px;
+    border: 3px solid 
+    #3c67e3;
+    border-radius: 10px;
+}
+
+.reg:hover{
+    animation: pulsate 3s 
+    ease-in-out; 
+}
+
+@keyframes pulsate {
+    0%{
+        box-shadow: 
+        0 0 25px #5ddcff,
+        0 0 50px #4e00c2;
+    }
+}
+</style>

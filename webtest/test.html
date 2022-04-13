@@ -1,0 +1,101 @@
+<html>
+<head>
+
+<title>Test site, Pj</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ </head>
+
+<body bgcolor="black" text="white"  link="white">
+
+<center>
+<img  src="logowave.png" style="width:150px;height:200px;">
+<img  src="logowavenew.png" style="width:150px;height:200px;">
+
+<br>
+<hr width="27%" color="white" />
+<h1>Welcome to my Website</h1>
+</center>
+
+
+<div data-includeHTML="header.html">  </div>
+
+
+<br>
+
+
+
+
+ 
+
+<p>
+<center>
+
+
+This is a test<br>A test of skill, knowlage, creativity and my desire to presue web dev<br>This site is built from hours of research and trial and error<br>My chosen  theme for this site is Japanese underground
+
+<br><br><br>
+
+
+<details class=det>
+<summary>About me</summary>
+ <br><br><br><br>If you would like to find out more about me. From achievements, my current IT course, my hobbies and interests ect feel free to check out  “About me” in the navigation tab above.<br><br><br><br>
+</details>
+<br><br>
+<details class=det>
+<summary>Contact me</summary>
+<br><br><br><br>To contact me and keep up to date with my progress and work live through twitter. Check out “contact me” in the navigation tab above.<br><br><br><br>
+</details>
+<br><br>
+ <details class=det>
+<summary>My projects</summary>
+ <br><br><br><br>To browse my projects, previous,in progress and upcoming, check out “my projects” in the navigation tab above.<br><br><br><br>
+</details>
+
+
+
+<br><br><br><br><br>
+
+
+</center>
+
+</p>
+<br><br>
+
+<hr width="70%" color="white" />
+<marquee>Pj Jones | 2021 </marquee>
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("div[data-includeHTML]").each(function () {                
+            $(this).load($(this).attr("data-includeHTML"));
+        });
+    });
+
+ </script>
+</html>
+<style>
+.det{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 50px;
+    border: 3px solid 
+    #3c67e3;
+    border-radius: 10px;
+}
+
+.det:hover{
+    animation: pulsate 3s 
+    ease-in-out; 
+}
+
+@keyframes pulsate {
+    0%{
+        box-shadow: 
+        0 0 25px #5ddcff,
+        0 0 50px #4e00c2;
+    }
+}
+</style>
